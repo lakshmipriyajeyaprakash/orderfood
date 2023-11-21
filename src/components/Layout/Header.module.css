@@ -1,0 +1,39 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5rem;
+    background-color: rgba(79, 184, 15, 0.537);
+    color: white;
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+  }
+  .header:hover{
+    background-color:#27bd7e9a; ;
+  }
+  .main-image {
+    width: 110%;
+    height: 20rem;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  .main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    transform: rotate(-1deg) translateY(2rem) translateX(-1rem);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .header h1 {
+      font-size: 12px;
+    }
+  }
+  
